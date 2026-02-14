@@ -42,15 +42,15 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "Yêu nhiều cỡ đó luôn hà, ghê z?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "Yêu tới vô cực và hơn thế nữa! 🚀💝",              // Shows when they go past 1000%
+        extreme: "Yêu nhiều cỡ đó luôn hà, ghê z??",  // Shows when they go past 5000%
+        high: "Yêu tới vô cực và hơn thế nữa!",              // Shows when they go past 1000%
         normal: "Và hơn thế nữa! 🥰"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "14/2 Anh tặng em rổ cam",
-        message: "Cam đoan ở bên em<br>Cam chịu tính tình em,<br>Cam lòng chỉ có em,<br>Cam kết luôn yêu em",
+        message: "Cam đoan ở bên em<br>Cam chịu tính tình em<br>Cam lòng chỉ có em<br>Cam kết luôn yêu em",
         emojis: "❤️❤️❤️❤️❤️",  // These will bounce around
         image: "./IMG_0069.jpg"     // Image to display (use .jpg or .png, not .heic)
     },
