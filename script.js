@@ -181,7 +181,7 @@ function celebrate() {
     
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').textContent = config.celebration.message;
+    document.getElementById('celebrationMessage').innerHTML = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
     // Show celebration image if configured
@@ -229,9 +229,20 @@ function setupMusicPlayer() {
     if (config.music.autoplay) {
         const playPromise = bgMusic.play();
         if (playPromise !== undefined) {
-            playPromise.catch(error => {
-                console.log("Autoplay prevented by browser");
+            playPromise.then(() => {
+                musicToggle.textContent = config.music.stopText;
+            }).catch(error => {
+                console.log("Autoplay prevented by browser - will play on first user interaction");
                 musicToggle.textContent = config.music.startText;
+                
+                // Auto-play on first user interaction (any click)
+                const autoPlayOnClick = () => {
+                    bgMusic.play().then(() => {
+                        musicToggle.textContent = config.music.stopText;
+                    }).catch(e => console.log("Could not play music"));
+                    document.removeEventListener('click', autoPlayOnClick);
+                };
+                document.addEventListener('click', autoPlayOnClick, { once: true });
             });
         }
     }
