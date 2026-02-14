@@ -49,8 +49,8 @@ const CONFIG = {
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Hẹ hẹ, vui quá trời luôn",
-        message: "Lần gặp tới, anh sẽ ôm em thật chặt, trao cho em nụ hôn ngọt ngào nhất! 💋",
+        title: "14/2 Anh tặng em rổ cam",
+        message: "Cam đoan ở bên em, cam chịu tính tình em, cam lòng chỉ có em, cam kết luôn yêu em",
         emojis: "🎁💖🤗💝💋❤️💕",  // These will bounce around
         image: "./IMG_0069.jpg"     // Image to display (use .jpg or .png, not .heic)
     },
