@@ -51,7 +51,7 @@ const CONFIG = {
     celebration: {
         title: "14/2 Anh tặng em rổ cam",
         message: "Cam đoan ở bên em<br>Cam chịu tính tình em<br>Cam lòng chỉ có em<br>Cam kết luôn yêu em",
-        emojis: "❤️❤️❤️❤️❤️",  // These will bounce around
+        emojis: "🍊🍊🍑🍊🍊",  // These will bounce around
         image: "./IMG_0069.jpg"     // Image to display (use .jpg or .png, not .heic)
     },
 
